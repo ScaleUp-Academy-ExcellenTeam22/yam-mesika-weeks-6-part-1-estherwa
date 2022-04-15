@@ -1,16 +1,13 @@
-# This is a sample Python script.
+from ex6_2 import filter , is_positive, is_older
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    the_ages = [-1,-2,-5,0, 1, 4, 2, 17, 35, 59, 99, 119]
+
+    print(tuple(filter(is_positive, the_ages)))
+
+    print(tuple(filter(is_older, the_ages)))
+
+
+
+

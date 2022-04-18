@@ -1,4 +1,5 @@
 from ex6_2 import filter , is_positive, is_older
+from ex6_3_1 import words_length
 from positive_numbers import get_the_positive_numbers
 from ex6_2_3 import timer
 
@@ -21,6 +22,9 @@ if __name__ == '__main__':
     print(time1)
     time2=timer("Hi {name}".format, name="Bug")
     print(time2)
+    #ex6.3.1
+    sentence = "Toto, I've a feeling we're not in Kansas anymore"
+    print(words_length(sentence))
 
 
 

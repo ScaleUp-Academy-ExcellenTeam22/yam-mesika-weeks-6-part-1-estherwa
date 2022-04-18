@@ -1,6 +1,7 @@
 from ex6_2 import filter , is_positive, is_older
 from ex6_3_1 import words_length
 from ex6_3_2 import get_letter
+from ex6_3_3 import count_word
 from positive_numbers import get_the_positive_numbers
 from ex6_2_3 import timer
 
@@ -29,6 +30,15 @@ if __name__ == '__main__':
     #EX6.3.2 - once we will print it for capital letter and another time for regular letter
     print(get_letter(ord('A'),ord('Z')))
     print(get_letter(ord('a'), ord('z')))
+    text_counter= """
+        You see, wire telegraph is a kind of a very, very long cat.
+        You pull his tail in New York and his head is meowing in Los Angeles.
+        Do you understand this?
+        And radio operates exactly the same way: you send signals here, they receive them there.
+        The only difference is that there is no cat.
+        """
+    # EX6.3.3
+    print((count_word(text_counter)))
 
 
 

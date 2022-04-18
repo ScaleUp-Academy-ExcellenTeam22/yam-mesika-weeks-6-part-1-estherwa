@@ -2,6 +2,7 @@ from ex6_2 import filter , is_positive, is_older
 from ex6_3_1 import words_length
 from ex6_3_2 import get_letter
 from ex6_3_3 import count_word
+from ex6_3_4 import full_names
 from positive_numbers import get_the_positive_numbers
 from ex6_2_3 import timer
 
@@ -39,6 +40,12 @@ if __name__ == '__main__':
         """
     # EX6.3.3
     print((count_word(text_counter)))
+    # EX6.3.4
+    first_names = ['avi', 'moshe', 'yaakov']
+    last_names = ['cohen', 'levi', 'mizrahi']
+    print(full_names(first_names, last_names, 10))
+    print(full_names(first_names, last_names))
+
 
 
 

@@ -1,5 +1,6 @@
 from ex6_2 import filter , is_positive, is_older
 from ex6_3_1 import words_length
+from ex6_3_2 import get_letter
 from positive_numbers import get_the_positive_numbers
 from ex6_2_3 import timer
 
@@ -25,8 +26,9 @@ if __name__ == '__main__':
     #ex6.3.1
     sentence = "Toto, I've a feeling we're not in Kansas anymore"
     print(words_length(sentence))
-
-
+    #EX6.3.2 - once we will print it for capital letter and another time for regular letter
+    print(get_letter(ord('A'),ord('Z')))
+    print(get_letter(ord('a'), ord('z')))
 
 
 
